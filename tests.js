@@ -25,3 +25,7 @@ QUnit.test("Testing Divide function with passing", function(assert) {
 QUnit.test("Testing Default function with passing", function(assert) {
   assert.equal(0, calculate(2, 2, "a"), "default 0");
 });
+
+QUnit.test("Testing Divide with 0 function with passing", function(assert) {
+  assert.equal("can't divide by zero", calculate(2, 0, "/"), "divide by zero");
+});

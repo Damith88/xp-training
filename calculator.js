@@ -18,6 +18,9 @@ function calculate(num1, num2, operation){
             return num1 * num2;
             break;
         case "/":
+            if(num2 == 0){
+                return "can't divide by zero";
+            }
             return num1 / num2;
             break;    
         default:

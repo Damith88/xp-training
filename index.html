@@ -11,19 +11,25 @@ p    {color:green}
 </head>
 <body>
   <h1 style>My Calculator</h1>
-  <input type="text" id="input_area"/> <select>
+  <input type="text" id="input_area1"/>
+   <select id="opereater">
   <option value="+">+</option>
   <option value="-">-</option>
   <option value="/">/</option>
   <option value="*">*</option>
-</select> <input type="text" id="input_area"/> = <input type="text" id="input_area" readonly="readonly"/>
+</select> <input type="text" id="input_area2"/> = <input type="text" id="input_area_result" readonly="readonly"/>
   <br>=
-  <input type="Submit" id="calculatebtn" value="Calculate">
+  <input type="button" id="calculatebtn" value="Calculate">
   <script src="calculator.js"></script>
   <script type="text/javascript">
     document.getElementById('calculatebtn').onclick = function(e){
-	var input = document.getElementById('input_area').value;
-        document.getElementById('result').innerHTML = eval(input);
+
+	var input1 = document.getElementById('input_area1').value;
+  var input2 = document.getElementById('input_area2').value;
+  var opereater = document.getElementById('opereater').value;
+  var result = calculate(parseInt(input1),parseInt(input2),opereater);
+  
+        document.getElementById('input_area_result').value = result;
     }
   </script>
 </body>

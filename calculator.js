@@ -15,11 +15,13 @@ function calculate(num1, num2, operation){
             return num1 - num2;
             break;
         case "*":
-            return num1 - num2;
+            return num1 * num2;
             break;
         case "/":
             return num1 / num2;
-            break;       
+            break;    
+        default:
+            return 0;
                 
     }
     return 0; 

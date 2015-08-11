@@ -17,9 +17,11 @@ p    {color:green}
   <option value="-">-</option>
   <option value="/">/</option>
   <option value="*">*</option>
-</select> <input type="text" id="input_area2"/> = <input type="text" id="input_area_result" readonly="readonly"/>
-  <br>=
+</select> <input type="text" id="input_area2"/>
   <input type="button" id="calculatebtn" value="Calculate">
+  <br>
+  <input type="text" id="input_area_result" readonly="readonly"/>
+
   <script src="calculator.js"></script>
   <script type="text/javascript">
     document.getElementById('calculatebtn').onclick = function(e){
@@ -28,7 +30,7 @@ p    {color:green}
   var input2 = document.getElementById('input_area2').value;
   var opereater = document.getElementById('opereater').value;
   var result = calculate(parseInt(input1),parseInt(input2),opereater);
-  
+
         document.getElementById('input_area_result').value = result;
     }
   </script>

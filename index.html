@@ -3,12 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Calculator</title>
+<style>
+body {background-color:lightgray}
+h1   {color:blue}
+p    {color:green}
+</style>
 </head>
 <body>
-  <h1>My Calculator</h1>
-  <input type="text" id="input_area"/>
-  <label id="result">--</label>
-  <br>
+  <h1 style>My Calculator</h1>
+  <input type="text" id="input_area"/> <select>
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="/">/</option>
+  <option value="*">*</option>
+</select> <input type="text" id="input_area"/> = <input type="text" id="input_area" readonly="readonly"/>
+  <br>=
   <input type="Submit" id="calculatebtn" value="Calculate">
   <script src="calculator.js"></script>
   <script type="text/javascript">
